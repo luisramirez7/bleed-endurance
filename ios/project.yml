@@ -28,6 +28,15 @@ targets:
       path: Bleed/Info.plist
       properties:
         UILaunchScreen: {}
+        UIAppFonts:
+          - Baloo2-Medium.ttf
+          - Baloo2-SemiBold.ttf
+          - Baloo2-Bold.ttf
+          - Baloo2-ExtraBold.ttf
+          - Nunito-Regular.ttf
+          - Nunito-SemiBold.ttf
+          - Nunito-Bold.ttf
+          - Nunito-ExtraBold.ttf
         NSHealthShareUsageDescription: >-
           Bleed reads your cycle, heart rate variability, resting heart rate, and
           sleep data to estimate your cycle phase and daily training readiness.

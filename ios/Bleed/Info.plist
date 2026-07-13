@@ -26,6 +26,17 @@
 	<string>Bleed reads your cycle, heart rate variability, resting heart rate, and sleep data to estimate your cycle phase and daily training readiness. Reproductive health data never leaves your device.</string>
 	<key>NSHealthUpdateUsageDescription</key>
 	<string>Bleed can save cycle logs you enter in the app back to Apple Health.</string>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Baloo2-Medium.ttf</string>
+		<string>Baloo2-SemiBold.ttf</string>
+		<string>Baloo2-Bold.ttf</string>
+		<string>Baloo2-ExtraBold.ttf</string>
+		<string>Nunito-Regular.ttf</string>
+		<string>Nunito-SemiBold.ttf</string>
+		<string>Nunito-Bold.ttf</string>
+		<string>Nunito-ExtraBold.ttf</string>
+	</array>
 	<key>UIBackgroundModes</key>
 	<array>
 		<string>fetch</string>

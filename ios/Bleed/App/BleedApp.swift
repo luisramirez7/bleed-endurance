@@ -6,7 +6,7 @@ struct BleedApp: App {
 
     var body: some Scene {
         WindowGroup {
-            TodayView()
+            RootView()
                 .environment(appModel)
         }
     }

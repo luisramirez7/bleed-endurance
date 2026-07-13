@@ -22,6 +22,17 @@
 - `backend/`: Python FastAPI, Pydantic v2, Postgres. Tests with pytest (`backend/.venv/bin/pytest`).
 - The server-side engine (`backend/app/engine.py`) mirrors `BleedCore`'s `ReadinessEngine`. If you change rule shapes in one, update the other; the Swift tests are the reference behavior.
 
+## Design system: Bloom
+
+The visual language lives in the Claude Design project "Bleed Bloom" (`https://claude.ai/design/p/c8c02249-6264-431e-a1dc-2e8eaa1f402b`, read with the DesignSync tool). Its readme.md is the governing doc. The Swift implementation is `ios/Bleed/Theme/BloomTheme.swift`.
+
+- Voice: warm, encouraging, a touch cheeky, never clinical. The app surface uses phase nicknames (Bleed, Rise, Peak, Wind-down), never the clinical names.
+- Type: Baloo 2 for headings and every numeral, Nunito for body and labels (bundled in `ios/Bleed/Resources/Fonts`, registered via UIAppFonts). No other families.
+- Colour: warm plum-brown ink `#3A2A33` on blush cream `#FBEFEC`, phase colours warm to cool (orange, amber, blue, purple). Shadows are purple-tinted, never grey. No gradient backgrounds.
+- Shape: generously rounded (cards 22, tiles 16, chips full pill). The sparkle `✦` is the only glyph-emoji allowed.
+- Numbers are the point: never hide the unadjusted score next to the phase-adjusted one.
+- The cycle wheel (`CycleWheelView`) is the signature object and doubles as the brand mark.
+
 ## Validation targets
 
 - Tune and validate on cycling first (the user's own data and domain), keep the pipes sport-agnostic.
