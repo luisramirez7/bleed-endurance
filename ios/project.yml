@@ -2,7 +2,7 @@ name: Bleed
 options:
   bundleIdPrefix: com.luisramirez
   deploymentTarget:
-    iOS: "17.0"
+    iOS: "18.0"
   xcodeVersion: "16.0"
 packages:
   BleedCore:
