@@ -1,0 +1,41 @@
+name: Bleed
+options:
+  bundleIdPrefix: com.luisramirez
+  deploymentTarget:
+    iOS: "17.0"
+  xcodeVersion: "16.0"
+packages:
+  BleedCore:
+    path: ../BleedCore
+settings:
+  base:
+    SWIFT_VERSION: "6.0"
+    SWIFT_STRICT_CONCURRENCY: complete
+targets:
+  Bleed:
+    type: application
+    platform: iOS
+    sources:
+      - Bleed
+    dependencies:
+      - package: BleedCore
+    entitlements:
+      path: Bleed/Bleed.entitlements
+      properties:
+        com.apple.developer.healthkit: true
+        com.apple.developer.healthkit.background-delivery: true
+    info:
+      path: Bleed/Info.plist
+      properties:
+        UILaunchScreen: {}
+        NSHealthShareUsageDescription: >-
+          Bleed reads your cycle, heart rate variability, resting heart rate, and
+          sleep data to estimate your cycle phase and daily training readiness.
+          Reproductive health data never leaves your device.
+        NSHealthUpdateUsageDescription: >-
+          Bleed can save cycle logs you enter in the app back to Apple Health.
+        BGTaskSchedulerPermittedIdentifiers:
+          - com.luisramirez.bleed.refresh
+        UIBackgroundModes:
+          - fetch
+          - processing

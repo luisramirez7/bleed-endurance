@@ -1,0 +1,20 @@
+# macOS
+.DS_Store
+
+# Swift / Xcode
+.build/
+DerivedData/
+*.xcodeproj
+xcuserdata/
+*.xcresult
+.swiftpm/
+
+# Python
+.venv/
+__pycache__/
+*.egg-info/
+.pytest_cache/
+
+# Env / secrets
+.env
+*.local
